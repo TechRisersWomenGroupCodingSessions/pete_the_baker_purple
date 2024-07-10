@@ -23,3 +23,4 @@ def test_run_2():
     ingredients = {"flour": 1200, "sugar": 1200, "eggs": 5, "milk": 200}
     return_value = baker.cakes(recipe, ingredients)
     assert return_value == 2;
+
