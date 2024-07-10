@@ -1,6 +1,6 @@
 class Baker:
     def cakes(self, recipe, ingredients):
-        min_amount = 0
+        min_amount = -1
         for item_in_recipe in recipe:
             if item_in_recipe not in ingredients:
                 return 0
@@ -10,6 +10,6 @@ class Baker:
 
             amount = round(ingredient_value / recipe_value)
 
-            if min_amount == 0 or min_amount > amount:
+            if min_amount == -1 or min_amount > amount:
                 min_amount = amount
         return min_amount
