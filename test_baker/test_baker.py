@@ -30,3 +30,10 @@ def test_run_0cakes():
     ingredients = {"flour": 0, "sugar": 1200, "eggs": 5, "milk": 200}
     return_value = baker.cakes(recipe, ingredients)
     assert return_value == 0;
+
+def test_run_0cakesOneMoreTime():
+    baker = Baker()
+    recipe = {"apples": 3, "flour": 300, "sugar": 150, "milk": 100, "oil": 100}
+    ingredients = {"sugar": 500, "flour": 2000, "milk": 2000}
+    return_value = baker.cakes(recipe, ingredients)
+    assert return_value == 0;
