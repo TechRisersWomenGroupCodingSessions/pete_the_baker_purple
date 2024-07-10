@@ -1,2 +1,3 @@
 .idea/
 /venv
+*baker/__pycache__/*
